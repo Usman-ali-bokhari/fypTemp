@@ -1,0 +1,41 @@
+.textarea-autosize {
+    width: 100%;
+    height: 350px; /* Make sure to add 'px' for pixel values */
+    background: white;
+    color: black;
+    resize: none;
+    border: 5px solid transparent;
+    outline: none;
+    border-radius: 6px;
+  }
+  
+  /* Define the :focus state for the class */
+  .textarea-autosize:focus {
+    border-bottom: 1px solid #4C71B2;
+  }
+  
+  .LitRevResponse {
+    margin-top: 10px;
+    width: 100%;
+    background: transparent;
+    color: white;
+    white-space: pre-line;
+    padding: 20px;
+    border: 1px solid #1d8cf8;;
+    outline: none;
+    border-radius: 0px;
+  }
+  .LitRevResponse small{
+    color: #1d8cf8;
+  }
+  .JRecResponse {
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    white-space: pre-line;
+    padding: 20px;
+    border: 1px solid #1d8cf8;;
+    outline: none;
+    border-radius: 0px;
+  }

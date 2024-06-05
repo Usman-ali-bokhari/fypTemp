@@ -18157,6 +18157,7 @@ a.badge-success.focus {
   color: #e14eca;
 }
 .nav-tabs.nav-tabs-info > .nav-item > .nav-link.active {
+  margin-left: 30%;
   border-color: #1d8cf8;
   color: #1d8cf8;
 }

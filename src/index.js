@@ -27,6 +27,10 @@ import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import LitRevPage from "views/IndexSections/LitRevPage.js";
+import JournalRecPage from "views/IndexSections/JournalRecPage.js";
+import '@patternfly/react-core/dist/styles/base.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,6 +41,8 @@ root.render(
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/register-page" element={<RegisterPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
+      <Route path="/litrev-page" element={<LitRevPage />} />
+      <Route path="/JRec-page" element={<JournalRecPage />} />
       <Route path="*" element={<Navigate to="/components" replace />} />
     </Routes>
   </BrowserRouter>

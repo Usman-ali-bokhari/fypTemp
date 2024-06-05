@@ -19462,6 +19462,7 @@ a.badge-success.focus {
 
 .tab-space {
   padding: 20px 0 50px 0px;
+  min-height: 800px;
 }
 
 .tab-content.tab-subcategories {
@@ -19523,11 +19524,14 @@ a.badge-success.focus {
 }
 .nav-tabs.nav-tabs-primary > .nav-item > .nav-link.active {
   border-color: #e14eca;
-  color: #e14eca;
+  color: #ffffff;
 }
 .nav-tabs.nav-tabs-info > .nav-item > .nav-link.active {
   border-color: #1d8cf8;
-  color: #1d8cf8;
+  color: #ffffff;
+}
+.nav-tabs.nav-tabs-navpadding{
+  margin-left: 20%;
 }
 .nav-tabs.nav-tabs-danger > .nav-item > .nav-link.active {
   border-color: #fd5d93;
