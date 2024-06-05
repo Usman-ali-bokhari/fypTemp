@@ -59,7 +59,9 @@
     "reactstrap": "8.10.0",
     "sass": "1.62.1",
     "styled-components": "^6.1.8",
-    "web-vitals": "3.3.1"
+    "web-vitals": "3.3.1",
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
