@@ -31,7 +31,7 @@ export const MultipleFileUploadBasic = () => {
     formData.append('file', droppedFiles[0]); // Assuming single file upload
     setIsLoading(true);
     try {
-      const response = await fetch('https://90ba-34-83-181-192.ngrok-free.app/upload/', {
+      const response = await fetch('https://206f-35-197-147-129.ngrok-free.app/upload/', {
         method: 'POST',
         body: formData,
       });
@@ -53,7 +53,7 @@ export const MultipleFileUploadBasic = () => {
   const updateSection = async (sectionName) => {
     setLoadingSections(prev => ({ ...prev, [sectionName]: true }));
     try {
-      const response = await fetch(`https://f3ec-35-222-37-99.ngrok-free.app/${sectionName}/`, {
+      const response = await fetch(`https://206f-35-197-147-129.ngrok-free.app/${sectionName}/`, {
         method: 'POST'
       });
       const data = await response.json();
