@@ -16,7 +16,7 @@ export default function LitRev() {
 
   const handleSubmit = async () => {
     setIsLoading(true);
-    const apiURL = 'https://3cd4-34-168-182-12.ngrok-free.app/predict'; // Update with your actual API endpoint
+    const apiURL = 'https://6df5-34-168-182-12.ngrok-free.app/predict'; // Update with your actual API endpoint
     try {
       console.log('Submitting text:', inputText);
       const response = await fetch(apiURL, {
