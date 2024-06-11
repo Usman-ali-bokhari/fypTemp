@@ -3,7 +3,24 @@ import TextareaAutosize from 'react-textarea-autosize';
 import Button from '@mui/material/Button';
 import LinearProgress from '@mui/material/LinearProgress';
 import Box from '@mui/material/Box';
-import { Container, Card, CardHeader, CardBody, Nav, NavItem, NavLink, TabContent, TabPane, Progress } from 'reactstrap'; // Import Progress from 'reactstrap'
+import { Container, Card, CardHeader, CardBody, Nav, NavItem, NavLink, TabContent, TabPane, Progress } from 'reactstrap';
+
+const journalLinks = {
+  "Artificial Intelligence Review": "https://link.springer.com/journal/10462",
+  "Applied Intelligence": "https://link.springer.com/journal/10489",
+  "Artificial Intelligence": "https://aij.ijcai.org/",
+  "Expert Systems with Applications": "https://www.sciencedirect.com/journal/expert-systems-with-applications",
+  "Autonomous Agents and Multi-Agent Systems": "https://link.springer.com/journal/10458",
+  "AI Magazine": "https://aaai.org/ai-magazine/",
+  "Pattern Recognition": "https://www.sciencedirect.com/journal/pattern-recognition",
+  "AI Communications": "https://www.iospress.com/catalog/journals/ai-communications",
+  "Data Mining and Knowledge Discovery": "https://link.springer.com/journal/10618",
+  "Neurocomputing": "https://www.sciencedirect.com/journal/neurocomputing",
+  "International Journal of Approximate Reasoning": "https://www.sciencedirect.com/journal/international-journal-of-approximate-reasoning",
+  "Neural Networks": "https://www.sciencedirect.com/journal/knowledge-based-systems/vol/8",
+  "Knowledge-Based Systems": "https://www.scimagojr.com/journalsearch.php?q=24772&tip=sid&clean=0",
+  "Information Sciences": "https://www.sciencedirect.com/journal/information-sciences"
+};
 
 export default function LitRev() {
   const [inputText, setInputText] = useState('');
@@ -11,12 +28,12 @@ export default function LitRev() {
   const [responseJournals, setResponseJournals] = useState([]);
 
   const handleTextChange = (event) => {
-    setInputText(event.target.value);
+    setInputText(event.target.value);x
   };
 
   const handleSubmit = async () => {
     setIsLoading(true);
-    const apiURL = 'https://6df5-34-168-182-12.ngrok-free.app/predict'; // Update with your actual API endpoint
+    const apiURL = 'https://d899-34-106-138-249.ngrok-free.app/predict'; // Update with your actual API endpoint
     try {
       console.log('Submitting text:', inputText);
       const response = await fetch(apiURL, {
@@ -79,7 +96,11 @@ export default function LitRev() {
                   <blockquote>
                     {responseJournals.map((journal, index) => (
                       <div key={index} className="LitRevResponse">
-                        <p className="">{journal}</p>
+                        <p className="">
+                          <a href={journalLinks[journal] || '#'} target="_blank" rel="noopener noreferrer">
+                            {journal}
+                          </a>
+                        </p>
                         <div className="progress-container progress-info">
                           <span className="progress-badge">Rating</span>
                           <Progress max="100" value={(responseJournals.length-index)*12}>
