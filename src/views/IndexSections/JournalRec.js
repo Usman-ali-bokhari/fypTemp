@@ -28,7 +28,7 @@ export default function LitRev() {
   const [responseJournals, setResponseJournals] = useState([]);
 
   const handleTextChange = (event) => {
-    setInputText(event.target.value);x
+    setInputText(event.target.value);
   };
 
   const handleSubmit = async () => {
