@@ -31,7 +31,7 @@ export const MultipleFileUploadBasic = () => {
     formData.append('file', droppedFiles[0]); // Assuming single file upload
     setIsLoading(true);
     try {
-      const response = await fetch('https://77a7-35-233-158-247.ngrok-free.appp/upload/', {
+      const response = await fetch('https://77a7-35-233-158-247.ngrok-free.app/upload/', {
         method: 'POST',
         body: formData,
       });
